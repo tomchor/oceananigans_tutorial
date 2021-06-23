@@ -37,7 +37,7 @@ s_field = ComputedField(s)
 
 
 # Set-up output
-simulation.output_writers[:fields] = NetCDFOutputWriter(model, (ω=ω_field, s=s_field),
+simulation.output_writers[:fields] = NetCDFOutputWriter(model, (u=u, v=v, ω=ω_field, s=s_field),
                                                       schedule = TimeInterval(2),
                                                       filepath = "two_dimensional_turbulence.nc",
                                                       mode = "c")

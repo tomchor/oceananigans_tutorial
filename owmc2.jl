@@ -80,6 +80,7 @@ b = model.tracers.b
                       ∂y(u)^2 + ∂y(v)^2 + ∂y(w)^2 + 
                       ∂z(u)^2 + ∂z(v)^2 + ∂z(w)^2))
 
+
 XYAverage(field) = AveragedField(field, dims=(1,2))
 ū = XYAverage(u)
 v̄ = XYAverage(v)
@@ -113,4 +114,3 @@ simulation.output_writers[:averages] =
 # Run!
 @info "Running simulation"
 run!(simulation)
-
