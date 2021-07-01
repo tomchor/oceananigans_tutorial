@@ -57,15 +57,15 @@ uuid = "72cfdca4-0801-4ab0-bf6a-d52aa10adc57"
 version = "0.2.1"
 
 [[Cassette]]
-git-tree-sha1 = "f80b4da0c926dc96f946628757a5926ff5a42e28"
+git-tree-sha1 = "087e76b8d48c014112ba890892c33be42ad10504"
 uuid = "7057c7e9-c182-5462-911a-8362d720325c"
-version = "0.3.6"
+version = "0.3.7"
 
 [[ChainRulesCore]]
 deps = ["Compat", "LinearAlgebra", "SparseArrays"]
-git-tree-sha1 = "ea05cadc30c15f9185b61ea418b9d47d53b55bc2"
+git-tree-sha1 = "be770c08881f7bb928dfd86d1ba83798f76cf62a"
 uuid = "d360d2e6-b24c-11e9-a2a3-2a2ae2dbcce4"
-version = "0.10.8"
+version = "0.10.9"
 
 [[Compat]]
 deps = ["Base64", "Dates", "DelimitedFiles", "Distributed", "InteractiveUtils", "LibGit2", "Libdl", "LinearAlgebra", "Markdown", "Mmap", "Pkg", "Printf", "REPL", "Random", "SHA", "Serialization", "SharedArrays", "Sockets", "SparseArrays", "Statistics", "Test", "UUIDs", "Unicode"]
@@ -89,9 +89,9 @@ uuid = "7445602f-e544-4518-8976-18f8e8ae6cdb"
 version = "0.1.0"
 
 [[DataAPI]]
-git-tree-sha1 = "dfb3b7e89e395be1e25c2ad6d7690dc29cc53b1d"
+git-tree-sha1 = "ee400abb2298bd13bfc3df1c412ed228061a2385"
 uuid = "9a962f9c-6df0-11e9-0e5d-c546b8b5ee8a"
-version = "1.6.0"
+version = "1.7.0"
 
 [[DataStructures]]
 deps = ["Compat", "InteractiveUtils", "OrderedCollections"]
@@ -150,9 +150,9 @@ version = "1.4.3"
 
 [[FFTW_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl", "Pkg"]
-git-tree-sha1 = "5a0d4b6a22a34d17d53543bd124f4b08ed78e8b0"
+git-tree-sha1 = "3676abafff7e4ff07bbd2c42b3d8201f31653dcc"
 uuid = "f5851436-0d7a-5f13-b9de-f02708fd171a"
-version = "3.3.9+7"
+version = "3.3.9+8"
 
 [[FileIO]]
 deps = ["Pkg", "Requires", "UUIDs"]
@@ -205,9 +205,9 @@ version = "1.0.0"
 
 [[JLD2]]
 deps = ["DataStructures", "FileIO", "MacroTools", "Mmap", "Pkg", "Printf", "Reexport", "TranscodingStreams", "UUIDs"]
-git-tree-sha1 = "a605ca7aac73ccbba3208c49ca4d5eb78c8f4c74"
+git-tree-sha1 = "4813826871754cf52607e76ad37acb36ccf52719"
 uuid = "033835bb-8acc-5ee8-8aae-3f567f8a3819"
-version = "0.4.10"
+version = "0.4.11"
 
 [[JLLWrappers]]
 deps = ["Preferences"]
@@ -335,23 +335,21 @@ uuid = "ca575930-c2e3-43a9-ace4-1e988b2c1908"
 
 [[Oceananigans]]
 deps = ["Adapt", "CUDA", "CUDAKernels", "Crayons", "CubedSphere", "Dates", "FFTW", "Glob", "InteractiveUtils", "JLD2", "KernelAbstractions", "LinearAlgebra", "Logging", "MPI", "NCDatasets", "OffsetArrays", "OrderedCollections", "PencilFFTs", "Pkg", "Printf", "Random", "Rotations", "SafeTestsets", "SeawaterPolynomials", "Statistics", "StructArrays", "Tullio"]
-git-tree-sha1 = "784815eff3dbbe5176727823e5596feed05e629b"
+git-tree-sha1 = "8d59211f48241f89d0d281f0186937c5dae52ee7"
 uuid = "9e8cae18-63c1-5223-a75c-80ca9d6e9a09"
-version = "0.58.5"
+version = "0.58.7"
 
 [[Oceanostics]]
 deps = ["KernelAbstractions", "Oceananigans", "Printf", "Test"]
-git-tree-sha1 = "58d39f3cf70f09333dee75f9a3c194748476145d"
-repo-rev = "main"
-repo-url = "https://github.com/tomchor/Oceanostics.jl.git"
+git-tree-sha1 = "3d7b50c5801a640f833225e52423fd9615572035"
 uuid = "d0ccf422-c8fb-49b5-a76d-74acdde946ac"
-version = "0.3.3"
+version = "0.4.0"
 
 [[OffsetArrays]]
 deps = ["Adapt"]
-git-tree-sha1 = "e436bb81d2ce4f01fb02374c4410e5a9229c85f9"
+git-tree-sha1 = "2bf78c5fd7fa56d2bbf1efbadd45c1b8789e6f57"
 uuid = "6fe1bfb0-de20-5000-8ca7-80f57d26f881"
-version = "1.10.0"
+version = "1.10.2"
 
 [[OpenMPI_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl", "Pkg"]
@@ -384,9 +382,9 @@ version = "1.1.0"
 
 [[PencilArrays]]
 deps = ["ArrayInterface", "JSON3", "Libdl", "LinearAlgebra", "MPI", "OffsetArrays", "Reexport", "Requires", "StaticArrays", "StaticPermutations", "TimerOutputs"]
-git-tree-sha1 = "94ea597a604f0e4864326b6e524643b5968f8756"
+git-tree-sha1 = "ccbb8b44e6cf6de161ce257234c63c88004ac040"
 uuid = "0e08944d-e94e-41b1-9406-dcf66b6a9d2e"
-version = "0.9.7"
+version = "0.9.8"
 
 [[PencilFFTs]]
 deps = ["AbstractFFTs", "FFTW", "LinearAlgebra", "MPI", "PencilArrays", "Reexport", "TimerOutputs"]
@@ -525,9 +523,9 @@ version = "1.0.1"
 
 [[Tables]]
 deps = ["DataAPI", "DataValueInterfaces", "IteratorInterfaceExtensions", "LinearAlgebra", "TableTraits", "Test"]
-git-tree-sha1 = "aa30f8bb63f9ff3f8303a06c604c8500a69aa791"
+git-tree-sha1 = "8ed4a3ea724dac32670b062be3ef1c1de6773ae8"
 uuid = "bd369af6-aec1-5ad0-b16a-f7cc5008161c"
-version = "1.4.3"
+version = "1.4.4"
 
 [[Tar]]
 deps = ["ArgTools", "SHA"]
@@ -545,9 +543,9 @@ uuid = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
 
 [[TimerOutputs]]
 deps = ["ExprTools", "Printf"]
-git-tree-sha1 = "bf8aacc899a1bd16522d0350e1e2310510d77236"
+git-tree-sha1 = "7ba978307a5d40c95c3247b7256f9e9807cab025"
 uuid = "a759f4b9-e2f1-59dc-863e-4aeb61b1ea8f"
-version = "0.5.9"
+version = "0.5.11"
 
 [[TranscodingStreams]]
 deps = ["Random", "Test"]

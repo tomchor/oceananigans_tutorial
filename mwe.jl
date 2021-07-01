@@ -1,8 +1,7 @@
 using Oceananigans
 using Oceananigans.Units
 using CUDA: has_cuda
-
-Nx, Ny, Nz = 256, 3200, 128
+Nx, Ny, Nz = 128, 1600, 64
 
 if has_cuda()
     arch = GPU()
@@ -24,6 +23,10 @@ println("\n", grid, "\n")
 
 model = IncompressibleModel(architecture = arch,
                 grid = grid,
+                advection = WENO5(),
+                timestepper = :RungeKutta3,
+                tracers=nothing,
+                buoyancy=nothing,
                 closure=nothing,
                 )
 println("\n", model, "\n")

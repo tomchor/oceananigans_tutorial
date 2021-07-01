@@ -10,14 +10,15 @@ using Oceananigans.Units
 arch = CPU()
 Lz = 32
 Nx = Ny = Nz = 32
-S = 0.8 # Stretching factor
-hyperbolically_spaced_nodes(k) = -Lz-Lz*(tanh(S * ( (-(k-34) - 1) / Nz - 1)) / tanh(S))
+σ = 0.8 # Stretching factor
+#hyperbolically_spaced_faces(k) = - Lz * (1 - (1 + tanh(σ * (k - 1) / Nz - 1) / tanh(σ)))
+hyperbolically_spaced_faces(k) = - Lz * (1 + (tanh(σ * ( (-(k-Nz) - 1) / Nz - 1)) / tanh(σ)))
 grid = VerticallyStretchedRectilinearGrid(size = (Nx, Ny, Nz), 
                                           architecture = arch,
                                           x = (0,64),
                                           y = (0,64),
                                           halo = (3, 3, 3),
-                                          z_faces = hyperbolically_spaced_nodes)
+                                          z_faces = hyperbolically_spaced_faces)
 println(grid, "\n\n")
 
 
